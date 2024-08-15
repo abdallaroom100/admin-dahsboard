@@ -20,39 +20,39 @@ export const api = createApi({
       providesTags: ["User"],
     }),
     getProducts: build.query({
-      query: () => "http://localhost:5000/client/products",
+      query: () => "dashboard-neon-three-56.vercel.app/client/products",
       providesTags: ["Products"],
     }),
     getCustomers: build.query({
-      query: () => "http://localhost:5000/client/customers",
+      query: () => "dashboard-neon-three-56.vercel.app/client/customers",
       providesTags: ["Customers"],
     }),
     getTransactions: build.query({
       query: ({ page, pageSize, sort, search }) => ({
-        url: "http://localhost:5000/client/transactions",
+        url: "dashboard-neon-three-56.vercel.app/client/transactions",
         method: "GET",
         params: { page, pageSize, sort, search },
       }),
       providesTags: ["Transactions"],
     }),
     getGeography: build.query({
-      query: () => "http://localhost:5000/client/geography",
+      query: () => "dashboard-neon-three-56.vercel.app/client/geography",
       providesTags: ["Geography"],
     }),
     getSales: build.query({
-      query: () => "http://localhost:5000/sales/sales",
+      query: () => "dashboard-neon-three-56.vercel.app/sales/sales",
       providesTags: ["Sales"],
     }),
     getAdmins: build.query({
-      query: () => "http://localhost:5000/management/admins",
+      query: () => "dashboard-neon-three-56.vercel.app/management/admins",
       providesTags: ["Admins"],
     }),
     getUserPerformance: build.query({
-      query: (id) => `http://localhost:5000/management/performance/${id}`,
+      query: (id) => `dashboard-neon-three-56.vercel.app/management/performance/${id}`,
       providesTags: ["Performance"],
     }),
     getDashboard: build.query({
-      query: () => "http://localhost:5000/general/dashboard",
+      query: () => "dashboard-neon-three-56.vercel.app/general/dashboard",
       providesTags: ["Dashboard"],
     }),
   }),
