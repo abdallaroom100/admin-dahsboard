@@ -16,7 +16,7 @@ export const api = createApi({
   ],
   endpoints: (build) => ({
     getUser: build.query({
-      query: (id) => `https:/localhost:5000/general/user/${id}`,
+      query: (id) => `dashboard-neon-three-56.vercel.app/general/user/${id}`,
       providesTags: ["User"],
     }),
     getProducts: build.query({
