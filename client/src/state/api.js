@@ -16,43 +16,43 @@ export const api = createApi({
   ],
   endpoints: (build) => ({
     getUser: build.query({
-      query: (id) => `dashboard-neon-three-56.vercel.app/general/user/${id}`,
+      query: (id) => `https://dashboard-neon-three-56.vercel.app//general/user/${id}`,
       providesTags: ["User"],
     }),
     getProducts: build.query({
-      query: () => "dashboard-neon-three-56.vercel.app/client/products",
+      query: () => "https://dashboard-neon-three-56.vercel.app//client/products",
       providesTags: ["Products"],
     }),
     getCustomers: build.query({
-      query: () => "dashboard-neon-three-56.vercel.app/client/customers",
+      query: () => "https://dashboard-neon-three-56.vercel.app//client/customers",
       providesTags: ["Customers"],
     }),
     getTransactions: build.query({
       query: ({ page, pageSize, sort, search }) => ({
-        url: "dashboard-neon-three-56.vercel.app/client/transactions",
+        url: "https://dashboard-neon-three-56.vercel.app//client/transactions",
         method: "GET",
         params: { page, pageSize, sort, search },
       }),
       providesTags: ["Transactions"],
     }),
     getGeography: build.query({
-      query: () => "dashboard-neon-three-56.vercel.app/client/geography",
+      query: () => "https://dashboard-neon-three-56.vercel.app//client/geography",
       providesTags: ["Geography"],
     }),
     getSales: build.query({
-      query: () => "dashboard-neon-three-56.vercel.app/sales/sales",
+      query: () => "https://dashboard-neon-three-56.vercel.app//sales/sales",
       providesTags: ["Sales"],
     }),
     getAdmins: build.query({
-      query: () => "dashboard-neon-three-56.vercel.app/management/admins",
+      query: () => "https://dashboard-neon-three-56.vercel.app//management/admins",
       providesTags: ["Admins"],
     }),
     getUserPerformance: build.query({
-      query: (id) => `dashboard-neon-three-56.vercel.app/management/performance/${id}`,
+      query: (id) => `https://dashboard-neon-three-56.vercel.app//management/performance/${id}`,
       providesTags: ["Performance"],
     }),
     getDashboard: build.query({
-      query: () => "dashboard-neon-three-56.vercel.app/general/dashboard",
+      query: () => "https://dashboard-neon-three-56.vercel.app//general/dashboard",
       providesTags: ["Dashboard"],
     }),
   }),
